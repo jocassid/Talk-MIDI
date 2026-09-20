@@ -3,9 +3,37 @@ A talk on generating MIDI files using Python
 
 ## Libraries I'm Looking at
 
+<table>
+    <thead>
+        <tr>
+            <th>Library</th>
+            <th>Description</th>
+            <th><code>pip install</code></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><a href="https://midiutil.readthedocs.io/en/1.2.1/">MIDUtility</a></td>
+            <td>Simple, multi-track MIDI file creation</td>
+            <td><code></code></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td><a href=""></a></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td><code></code></td>
+        </tr>
+    </tbody>
+</table>
+
+
 | Library                                             | Description                            | `pip install`           |
 |-----------------------------------------------------|----------------------------------------|-------------------------|
-| [MIDIUtil](https://midiutil.readthedocs.io/en/1.2.1/) | Simple, multi-track MIDI file creation | [pip install MIDIUtil](https://pypi.org/project/MIDIUtil/) |
+| [() |  | [pip install MIDIUtil](https://pypi.org/project/MIDIUtil/) |
 | [pretty_midi]                                       | Advanced manipulation and analysis     | pip install pretty_midi |
 
 
