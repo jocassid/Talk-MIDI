@@ -13,14 +13,14 @@ A talk on generating MIDI files using Python
     </thead>
     <tbody>
         <tr>
-            <td><a href="https://midiutil.readthedocs.io/en/1.2.1/">MIDUtility</a></td>
+            <td><a href="https://midiutil.readthedocs.io/en/1.2.1/">MIDUtil</a></td>
             <td>Simple, multi-track MIDI file creation</td>
-            <td><code></code></td>
+            <td><a href="https://pypi.org/project/MIDIUtil/"><code>pip install MIDIUtil</code></a></td>
         </tr>
         <tr>
-            <td></td>
-            <td></td>
-            <td><a href=""></a></td>
+            <td><a href="https://craffel.github.io/pretty-midi/">pretty_midi</a></td>
+            <td>Advanced manipulation and analysis</td>
+            <td><a href="https://pypi.org/project/pretty-midi/">pip install pretty_midi</a></td>
         </tr>
         <tr>
             <td></td>
@@ -31,20 +31,35 @@ A talk on generating MIDI files using Python
 </table>
 
 
-| Library                                             | Description                            | `pip install`           |
-|-----------------------------------------------------|----------------------------------------|-------------------------|
-| [() |  | [pip install MIDIUtil](https://pypi.org/project/MIDIUtil/) |
-| [pretty_midi]                                       | Advanced manipulation and analysis     | pip install pretty_midi |
+## MIDIUtil
+
+## pretty-midi
+
+* Jupyter Notebook Tutorial https://nbviewer.org/github/craffel/pretty-midi/blob/main/Tutorial.ipynb
+* Jupyter Notebook Tutorial (in Google Colab) https://colab.research.google.com/github/craffel/pretty-midi/blob/main/Tutorial.ipynb
 
 
 ## LMMS Setup
 
-I needed to setup the default soundfont in LMMS. I used the FreePatsGM-SF2-20221026 soundfont.
+From the https://lmms.io/ page:
 
-# SoundFonts sources listed on 
+> LMMS is an open-source cross-platform digital audio workstation designed for 
+> music production. It includes an advanced Piano Roll, Beat Sequencer, Song 
+> Editor, and Mixer for composing, arranging, and mixing music. It comes 
+> with 15+ synthesizer plugins by default, along with VST2 and SoundFont2 support.
+
+To get LMMS to play my MIDI file, I needed to set the default soundfont in 
+LMMS. I used the FreePatsGM-SF2-20221026 soundfont.
+
+### SoundFonts sources listed on 
 
 https://docs.lmms.io/user-manual/resources/soundfonts
 
 | File/Folder             | Source                                                   |
 |-------------------------|----------------------------------------------------------|
 | FreePatsGM-SF2-20221026 | https://freepats.zenvoid.org/SoundSets/general-midi.html |
+
+## MuseScore
+
+For creating sheet music I'm using 
+https://musescore.org/en
