@@ -63,3 +63,10 @@ https://docs.lmms.io/user-manual/resources/soundfonts
 
 For creating sheet music I'm using 
 https://musescore.org/en
+
+
+# Miscellaneous Resources
+
+* https://www.loc.gov/collections/historic-sheet-music/
+* https://computermusicresource.com/midikeys.html
+* https://newt.phys.unsw.edu.au/jw/notes.html
