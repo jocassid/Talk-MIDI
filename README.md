@@ -23,7 +23,7 @@ A talk on generating MIDI files using Python
             <td><a href="https://pypi.org/project/pretty-midi/">pip install pretty_midi</a></td>
         </tr>
         <tr>
-            <td></td>
+            <td>mido?</td>
             <td></td>
             <td><code></code></td>
         </tr>
