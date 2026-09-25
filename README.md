@@ -51,6 +51,11 @@ velocity
             <td></td>
             <td><a href="https://pypi.org/project/mido/"><code>pip install mido</code></a></td>
         </tr>
+        <tr>
+            <td><a href="https://github.com/amberwhitehead/pyfluidsynth">pyfluidsynth</a></td>
+            <td></td>
+            <td><a href="https://pypi.org/project/pyfluidsynth/"><code>pip install pyfluidsynth</code></a></td>
+        </tr>
     </tbody>
 </table>
 
