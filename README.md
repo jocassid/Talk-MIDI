@@ -1,6 +1,30 @@
 # Talk-MIDI
 A talk on generating MIDI files using Python
 
+## Ideas:
+* Use "Mary had a little lamb" or "Twinkle Twinkle little Star for demos"
+* https://musescore.com - has free sheet music
+* Yellow Notes simple piano tunes https://www.youtube.com/@WouterBruinsma/featured
+
+## MIDI Terminology
+
+MIDI
+: Musical Instrument Digital Interface
+
+pitch
+: Refers to the frequency of a musical note.  Values are 0 (low) to 127 
+(high) with middle C as 60
+
+program
+: Each instrument has a program number associated with it.  Note that a drum
+instrument can share the same program number as a non-drum instrument.
+
+tick
+: time interval (not sure what a tick is at this point)
+
+velocity
+: Volume runs 1 (quietest) to 127 (loudest)
+
 ## Libraries I'm Looking at
 
 <table>
@@ -20,12 +44,12 @@ A talk on generating MIDI files using Python
         <tr>
             <td><a href="https://craffel.github.io/pretty-midi/">pretty_midi</a></td>
             <td>Advanced manipulation and analysis</td>
-            <td><a href="https://pypi.org/project/pretty-midi/">pip install pretty_midi</a></td>
+            <td><a href="https://pypi.org/project/pretty-midi/">pip install pretty-midi</a></td>
         </tr>
         <tr>
-            <td>mido?</td>
+            <td><a href="">mido</a></td>
             <td></td>
-            <td><code></code></td>
+            <td><a href="https://pypi.org/project/mido/"><code>pip install mido</code></a></td>
         </tr>
     </tbody>
 </table>
