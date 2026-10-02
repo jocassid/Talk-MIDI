@@ -2,7 +2,7 @@
 
 from io import FileIO, BufferedReader
 from struct import unpack, unpack_from
-from sys import stderr
+from sys import argv, stderr
 
 
 FORMAT_DESCRIPTIONS = {
@@ -120,10 +120,9 @@ def read_midi(file_path):
         read_chunks(reader)
 
 
-def main():
-    read_midi('Drum_sample2.mid')
-
+def main(file_path: str):
+    read_midi(file_path)
 
 if __name__ == '__main__':
-    main()
+    main(argv[0])
 
