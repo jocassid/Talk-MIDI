@@ -8,6 +8,10 @@ A talk on generating MIDI files using Python
 
 ## MIDI Terminology
 
+channel
+: There are 16 channels in MIDI, allowing up to 16 instruments to be present 
+in a track.
+
 MIDI
 : Musical Instrument Digital Interface
 
@@ -23,7 +27,8 @@ tick
 : time interval (not sure what a tick is at this point)
 
 velocity
-: Volume runs 1 (quietest) to 127 (loudest)
+: Volume runs 1 (quietest) to 127 (loudest).  Think of it as how hard you 
+hit the piano key.
 
 ## Libraries I'm Looking at
 
@@ -49,7 +54,8 @@ velocity
         <tr>
             <td><a href="">mido</a></td>
             <td></td>
-            <td><a href="https://pypi.org/project/mido/"><code>pip install mido</code></a></td>
+            <td><a href="
+"><code>pip install mido</code></a></td>
         </tr>
         <tr>
             <td><a href="https://github.com/amberwhitehead/pyfluidsynth">pyfluidsynth</a></td>
@@ -99,3 +105,5 @@ https://musescore.org/en
 * https://www.loc.gov/collections/historic-sheet-music/
 * https://computermusicresource.com/midikeys.html
 * https://newt.phys.unsw.edu.au/jw/notes.html
+* https://homestudioguys.com/blog/understanding-midi-channels-and-how-they-work/
+* https://midi.org/

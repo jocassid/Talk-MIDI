@@ -1,5 +1,7 @@
 
-from midiutil import MIDIFile
+from typing import Iterator
+
+
 
 C = 60
 D = 62
@@ -8,7 +10,12 @@ F = 65
 G = 67
 C2 = 72
 
-MERRILY = ['mer', 'ri', 'ly']
+
+def merrily() -> Iterator[tuple[int, int, str]]:
+    for note in [C2, G, E, C]:
+        for word in ['mer', 'ri', 'ly']:
+            yield note, 1, word
+
 
 # 3/4 time 100 BPM
 NOTES = (
@@ -22,10 +29,7 @@ NOTES = (
     (E, 2, 'down'),
     (F, 1, 'the'),
     (G, 6, 'stream'),
-    *[(C2, 1, w) for w in MERRILY],
-    *[(G, 1, w) for w in MERRILY],
-    *[(E, 1, w) for w in MERRILY],
-    *[(C, 1, w) for w in MERRILY],
+    *merrily(),
     (G, 2, 'Life'),
     (F, 1, 'is'),
     (E, 2, 'but'),
@@ -33,16 +37,37 @@ NOTES = (
     (C, 6, 'dream'),
 )
 
-midi = MIDIFile(1)
-midi.addTempo(0, 0, 100)
 
-channel = 0
-track = 0
-time = 0
-volume = 100
-for pitch, duration, _ in NOTES:
-    midi.addNote(track, channel, pitch, time, duration, volume)
-    time = time + duration
 
-with open('row_row_row_your_boat.mid', 'wb') as output_file:
-    midi.writeFile(output_file)
+
+
+def write_row_row_row_your_boat(file_path: str, add_tempo: bool = True):
+    from midiutil import MIDIFile
+
+    midi = MIDIFile(1)
+
+    if add_tempo:
+        midi.addTempo(0, 0, 240)
+
+    channel = 0
+    track = 0
+    time = 0
+    volume = 100
+    for pitch, duration, _ in NOTES:
+        midi.addNote(track, channel, pitch, time, duration, volume)
+        time = time + duration
+
+    with open(file_path, 'wb') as output_file:
+        midi.writeFile(output_file)
+
+def main():
+    write_row_row_row_your_boat('row_row_row_your_boat.mid')
+    write_row_row_row_your_boat(
+        'row_row_row_your_boat_no_tempo.mid',
+        add_tempo=False,
+    )
+
+
+
+if __name__ == '__main__':
+    main()
