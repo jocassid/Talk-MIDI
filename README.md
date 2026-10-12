@@ -53,9 +53,8 @@ hit the piano key.
         </tr>
         <tr>
             <td><a href="">mido</a></td>
-            <td></td>
-            <td><a href="
-"><code>pip install mido</code></a></td>
+            <td>Handles file I/O and MIDI messages.  It's a good starting place for working w/ MIDI files</td>
+            <td><a href="https://pypi.org/project/mido/"><code>pip install mido</code></a></td>
         </tr>
         <tr>
             <td><a href="https://github.com/amberwhitehead/pyfluidsynth">pyfluidsynth</a></td>
