@@ -32,7 +32,11 @@ hit the piano key.
 
 ## Libraries I'm Looking at
 
-<table>
+<style>
+table.libraries > tbody > tr > td:nth-of-type(3) { font-family: monospace; }
+</style>
+
+<table class="libraries">
     <thead>
         <tr>
             <th>Library</th>
@@ -44,7 +48,7 @@ hit the piano key.
         <tr>
             <td><a href="https://midiutil.readthedocs.io/en/1.2.1/">MIDUtil</a></td>
             <td>Simple, multi-track MIDI file creation</td>
-            <td><a href="https://pypi.org/project/MIDIUtil/"><code>pip install MIDIUtil</code></a></td>
+            <td><a href="https://pypi.org/project/MIDIUtil/">pip install MIDIUtil</a></td>
         </tr>
         <tr>
             <td><a href="https://craffel.github.io/pretty-midi/">pretty_midi</a></td>
@@ -52,14 +56,14 @@ hit the piano key.
             <td><a href="https://pypi.org/project/pretty-midi/">pip install pretty-midi</a></td>
         </tr>
         <tr>
-            <td><a href="">mido</a></td>
+            <td><a href="https://mido.readthedocs.io/en/stable/">mido</a></td>
             <td>Handles file I/O and MIDI messages.  It's a good starting place for working w/ MIDI files</td>
-            <td><a href="https://pypi.org/project/mido/"><code>pip install mido</code></a></td>
+            <td><a href="https://pypi.org/project/mido/">pip install mido</a></td>
         </tr>
         <tr>
             <td><a href="https://github.com/amberwhitehead/pyfluidsynth">pyfluidsynth</a></td>
             <td></td>
-            <td><a href="https://pypi.org/project/pyfluidsynth/"><code>pip install pyfluidsynth</code></a></td>
+            <td><a href="https://pypi.org/project/pyfluidsynth/">pip install pyfluidsynth</a></td>
         </tr>
     </tbody>
 </table>

@@ -1,6 +1,6 @@
+#!/usr/bin/env python3
 
 from typing import Iterator
-
 
 
 C = 60
@@ -38,23 +38,22 @@ NOTES = (
 )
 
 
-
-
-
-def write_row_row_row_your_boat(file_path: str, add_tempo: bool = True):
+def write_row_row_row_your_boat(file_path: str):
     from midiutil import MIDIFile
 
     midi = MIDIFile(1)
+    midi.addTempo(0, 0, 240)
 
-    if add_tempo:
-        midi.addTempo(0, 0, 240)
-
-    channel = 0
-    track = 0
     time = 0
-    volume = 100
     for pitch, duration, _ in NOTES:
-        midi.addNote(track, channel, pitch, time, duration, volume)
+        midi.addNote(
+            track=0,
+            channel=0,
+            pitch=pitch,
+            time=time,
+            duration=duration,
+            volume=100,
+        )
         time = time + duration
 
     with open(file_path, 'wb') as output_file:
@@ -64,9 +63,7 @@ def main():
     write_row_row_row_your_boat('row_row_row_your_boat.mid')
     write_row_row_row_your_boat(
         'row_row_row_your_boat_no_tempo.mid',
-        add_tempo=False,
     )
-
 
 
 if __name__ == '__main__':

@@ -23,14 +23,16 @@ def main(args: Namespace) -> None:
 
     midi_file_out = MidiFile()
 
-
-    # First pass determine max track time
+    # First pass to determine max track time
     max_track_time: int = 0
     for track in midi_file_in.tracks:
         for message in track:
-            print(f"{message.type=}")
-            if message.time > max_track_time:
-                max_track_time = message.time
+            max_track_time += message.time
+            print(f"{message.type=}  {message}")
+
+
+
+
 
 
 
