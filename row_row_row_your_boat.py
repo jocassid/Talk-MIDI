@@ -61,9 +61,6 @@ def write_row_row_row_your_boat(file_path: str):
 
 def main():
     write_row_row_row_your_boat('row_row_row_your_boat.mid')
-    write_row_row_row_your_boat(
-        'row_row_row_your_boat_no_tempo.mid',
-    )
 
 
 if __name__ == '__main__':
