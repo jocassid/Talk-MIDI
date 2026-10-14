@@ -15,7 +15,7 @@ def main(args: Namespace):
     for i, track in enumerate(midi.tracks):
         print(f'Track {i}: {track.name}')
         for msg in track:
-            print(f'  {msg.hex()} | {msg}')
+            print(f'    {msg}')
 
 
 def parse_args():
