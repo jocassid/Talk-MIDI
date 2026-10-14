@@ -37,13 +37,6 @@ def process_messages(
             continue
 
 
-def has_notes(track: MidiTrack) -> bool:
-    for message in track:
-        if message.type == 'note_on':
-            return True
-    return False
-
-
 def main(args: Namespace):
     input_file: Path = args.input_file
     output_file: Path = args.output_file
