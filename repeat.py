@@ -53,7 +53,10 @@ def main(args: Namespace):
         raise IOError(f'File {input_file} does not exist')
 
     midi_file_in = MidiFile(input_file)
-    midi_file_out = MidiFile()
+    midi_file_out = MidiFile(
+        type=midi_file_in.type,
+        ticks_per_beat=midi_file_in.ticks_per_beat
+    )
 
     for repetition in range(repetitions):
         for track_index, track_in in enumerate(midi_file_in.tracks):
