@@ -42,7 +42,7 @@ def write_row_row_row_your_boat(file_path: str):
     from midiutil import MIDIFile
 
     midi = MIDIFile(1)
-    midi.addTempo(0, 0, 400)
+    midi.addTempo(0, 0, 120)
 
     time = 0
     for pitch, duration, _ in NOTES:

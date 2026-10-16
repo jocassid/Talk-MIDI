@@ -110,3 +110,4 @@ https://musescore.org/en
 * https://newt.phys.unsw.edu.au/jw/notes.html
 * https://homestudioguys.com/blog/understanding-midi-channels-and-how-they-work/
 * https://midi.org/
+* https://medium.com/@aghajari/where-to-start-building-a-piano-app-4b717e7b8292 - It's a Java project, but covers MIDI concepts
