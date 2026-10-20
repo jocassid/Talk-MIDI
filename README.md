@@ -10,7 +10,7 @@ A talk on generating MIDI files using Python
 
 channel
 : There are 16 channels in MIDI, allowing up to 16 instruments to be present 
-in a track.
+in a track.  Channel 10
 
 MIDI
 : Musical Instrument Digital Interface
@@ -30,7 +30,7 @@ velocity
 : Volume runs 1 (quietest) to 127 (loudest).  Think of it as how hard you 
 hit the piano key.
 
-## Libraries I'm Looking at
+## Python Libraries
 
 <style>
 table.libraries > tbody > tr > td:nth-of-type(3) { font-family: monospace; }
@@ -61,17 +61,17 @@ table.libraries > tbody > tr > td:nth-of-type(3) { font-family: monospace; }
             <td><a href="https://pypi.org/project/mido/">pip install mido</a></td>
         </tr>
         <tr>
-            <td><a href="https://github.com/amberwhitehead/pyfluidsynth">pyfluidsynth</a></td>
+            <td><a href=""></a></td>
             <td></td>
-            <td><a href="https://pypi.org/project/pyfluidsynth/">pip install pyfluidsynth</a></td>
+            <td><a href=""></a></td>
         </tr>
     </tbody>
 </table>
 
 
-## MIDIUtil
+### MIDIUtil
 
-## pretty-midi
+### pretty-midi
 
 * Jupyter Notebook Tutorial https://nbviewer.org/github/craffel/pretty-midi/blob/main/Tutorial.ipynb
 * Jupyter Notebook Tutorial (in Google Colab) https://colab.research.google.com/github/craffel/pretty-midi/blob/main/Tutorial.ipynb
