@@ -2,23 +2,20 @@
 
 from typing import Iterator
 
-
-C = 60
-D = 62
-E = 64
-F = 65
-G = 67
-C2 = 72
+from notes import C, D, E, F, G, Note
 
 
-def merrily() -> Iterator[tuple[int, int, str]]:
-    for note in [C2, G, E, C]:
+NoteBeatsAndWord = tuple[Note, int, str]
+
+
+def merrily() -> Iterator[NoteBeatsAndWord]:
+    for note in [C << 1, G, E, C]:
         for word in ['mer', 'ri', 'ly']:
             yield note, 1, word
 
 
 # 3/4 time 100 BPM
-NOTES = (
+NOTES: tuple[tuple[Note, int, str], ...] = (
     (C, 3, 'row'),
     (C, 3, 'row'),
     (C, 2, 'row'),
@@ -45,11 +42,11 @@ def write_row_row_row_your_boat(file_path: str):
     midi.addTempo(0, 0, 120)
 
     time = 0
-    for pitch, duration, _ in NOTES:
+    for note, duration, _ in NOTES:
         midi.addNote(
             track=0,
             channel=0,
-            pitch=pitch,
+            pitch=note.value,
             time=time,
             duration=duration,
             volume=100,

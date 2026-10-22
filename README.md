@@ -10,7 +10,8 @@ A talk on generating MIDI files using Python
 
 channel
 : There are 16 channels in MIDI, allowing up to 16 instruments to be present 
-in a track.  Channel 10
+in a track.  Channel 9 (0-based) or 10 (1-based) is reserved for percussion.
+On the percussion channel, the note (35-81) controls what instrument is played.
 
 MIDI
 : Musical Instrument Digital Interface
@@ -20,11 +21,17 @@ pitch
 (high) with middle C as 60
 
 program
-: Each instrument has a program number associated with it.  Note that a drum
-instrument can share the same program number as a non-drum instrument.
+: Each instrument has a program number associated with it (0-127).  This 
+includes a number of percussion instruments among them.  In addition there's 
+a channel reserved for percussion, on that channel the note controls what 
+instrument is played.
 
 tick
 : time interval (not sure what a tick is at this point)
+
+track
+: A track is a sequence of MIDI events.  Each track can have its own set of
+instruments and notes.
 
 velocity
 : Volume runs 1 (quietest) to 127 (loudest).  Think of it as how hard you 
@@ -111,3 +118,5 @@ https://musescore.org/en
 * https://homestudioguys.com/blog/understanding-midi-channels-and-how-they-work/
 * https://midi.org/
 * https://medium.com/@aghajari/where-to-start-building-a-piano-app-4b717e7b8292 - It's a Java project, but covers MIDI concepts
+* https://soundprogramming.net
+* https://www.recordingblogs.com/wiki/midi-program-change-message
